@@ -1,96 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Shivani Singhal</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Shivani Singhal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.onvisible.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="assets/js/main.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 30px;
+    color: #111;
+  }
+  .hc{
+    margin: 10px 0 30px 0;
+    letter-spacing: 5px;      
+    font-size: 20px;
+    color: #555;
+  }
+  .margin11 {margin-bottom: 45px;}
+  .bg-11 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .container-fluid11 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
 
-<div class="w3-container w3-grey" style="position:relative">
- <a class="w3-btn w3-circle w3-xlarge w3-right w3-white" style="position:absolute;top:126px;right:42px;"><i>+</i></a>
- <h1 class="w3-jumbo w3-text-grey" style="text-shadow:1px 1px 0 #444">My Blog</h1>
-</div>
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<div class="w3-grey w3-animate-zoom" style="padding:20px 50px;background-image:url('pic_boat_portrait.jpg');
-background-size:cover;">
-
-<div class="w3-section w3-row-padding">
-
-  <div class="w3-twothird">
-    <div class="w3-card-4">
-      <div class="w3-display-container">
-        <img src="img_car.jpg" alt="Car" style="width:100%">
-        <div class="w3-display-bottomleft w3-container w3-xlarge w3-text-black"><p>Nice Car</p></div>
-      </div>
-      <div class="w3-container w3-light-grey">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>2 Hours Ago</p>
-      </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">SS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#aboutme">ABOUT ME</a></li>
+        <li><a href="#blogs">BLOGS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
     </div>
   </div>
-  <div class="w3-third w3-container w3-center">
-    <div class="w3-card-4">
-      <div class="w3-container">
-      <p class="w3-jumbo">✉</p>
-      <p class="w3-large">+ 1 334</p>
-      </div>
-      <div class="w3-container w3-white">
-      <p>2 Hours Ago</p>
-      </div>
+</nav>
+<div id="#home" class="bg-1">
+    <div class="container-fluid11 bg-11 text-center">
+      <h3 class="margin11">SHIVANI SINGHAL</h3>
+      <img src="images/Shivani_Singhal.jpg" class="img-responsive img-circle margin11" style="display:inline" alt="Bird" width="350" height="50">
     </div>
-    <div class="w3-card-4 w3-section">
-      <div class="w3-container w3-white">
-      <p class="w3-xxlarge">✉</p>
-      <p class="w3-large">+ 1 555</p>
-      </div>
-      <div class="w3-container">
-      <p>3 Hours Ago</p>
-      </div>
+</div>
+
+<!-- My front section-->
+<div id="aboutme" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">ABOUT ME</h3>
+    <p class="text-center">blahhhhhhhhhh99999999999999</p>
+  </div>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="blogs" class="container text-center">
+  <h3>My Blogs</h3>
+</div>
+
+<section class="carousel">
+    <div class="reel">
+    	<article>
+            <a class="image featured center" href="">
+                <center><img src="images/kubernetes.png" alt="" height="300" width="600" class="image.centered "/>
+                </center>
+                <header>
+                    <p class=hc>How to Contribute in kubernetes</p>
+                </header>
+                <p>My first PR to fix an issue in open source code of Kuberentes</p>
+         </a>
+        </article>
     </div>
-  </div>
-</div>
+</section>
 
-<div class="w3-section w3-container">
-<div class="w3-card-4">
-  <img src="img_recordplayer.jpg" alt="Disc" style="width:100%">
-  <div class="w3-container w3-white">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Today</p>
-  </div>
-</div>
-</div>
+<!-- Container (TOUR Section) -->
+<div id="contact" class="bg-1">
+ 
 
-<div class="w3-section w3-container">
-<div class="w3-card-4">
-  <img src="img_snow.jpg" alt="Snow" style="width:100%">
-  <div class="w3-container w3-white">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Today</p>
-  </div>
-</div>
-</div>
 
-<div class="w3-section w3-container">
-<div class="w3-card-4">
-  <div class="w3-container w3-padding-16 w3-black w3-xxlarge">
-    <p>«<i> Make it as simple as possible, but not simpler </i>»</p>
-  </div>
-  <div class="w3-container w3-white">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>2 Days Ago</p>
-  </div>
+<div id="footer">
+	<div class="row">
+		<div class="12u">
+
+			<!-- Contact -->
+				<section class="contact">
+					<header>
+						<h3>Get in touch with me</h3>
+					</header>
+
+					<ul class="icons">
+						<li><a href="https://github.com/setCodesToFire" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:shivani.singhal2804@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.linkedin.com/in/shivani2804/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+					</ul>
+				</section>
+
+		</div>
+
+	</div>
 </div>
 </div>
 
-</div>
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-<footer class="w3-container">
-  <p>Powered by 
-  <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a></p>
-</footer>
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
 
 </body>
 </html>
