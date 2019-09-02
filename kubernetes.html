@@ -26,7 +26,7 @@
   }
   h3, h4 {
     margin: 10px 0 30px 0;
-    letter-spacing: 10px;      
+    letter-spacing: 5px;      
     font-size: 30px;
     color: #111;
   }
@@ -35,6 +35,16 @@
     letter-spacing: 5px;      
     font-size: 20px;
     color: #555;
+  }
+  .textDec{
+    font: 400 18px/1.8 Lato, sans-serif;
+    color: #788;
+  }
+
+  .thick{
+    font-weight: bold;
+    font: 400 22px/1.8 Lato, sans-serif;
+    color: black;
   }
   .margin11 {margin-bottom: 45px;}
   .bg-11 { 
@@ -174,44 +184,93 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage1">SS</a>
+      <a class="navbar-brand" href="#myPage1">SS</a></font>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://shivi28.github.io/">HOME</a></li>
-        <li><a href="https://shivi28.github.io/#aboutme">ABOUT ME</a></li>
-        <li><a href="https://shivi28.github.io/#blogs">BLOGS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="https://shivi28.github.io/">HOME</a></font></li>
+        <li><a href="https://shivi28.github.io/#aboutme">ABOUT ME</a></font></li>
+        <li><a href="https://shivi28.github.io/#blogs">BLOGS</a></font></li>
+        <li><a href="#contact">CONTACT</a></font></li>
       </ul>
     </div>
   </div>
 </nav>
 <!-- Container (The Band Section) -->
 <div id="blogs1" class="container text-center">
-  <h3>My Blogs<br>fefer2<br></h3>
+  <h3>How to Contribute in kubernetes<img src="images/kubernetes.png" alt="" height="300" width="600" class="image.centered "/></h3>
+
+  <center>
+    
+    <p class="textDec">
+      This blog tells you more about how I started my open-source contributions what are the challenges that I encountered and the steps that I took to tackle them.
+    </p>
+    <h3>How it begins ?</h3>
+     <p class="textDec">
+      The world of open source remained unknown to me for a long time because of my background and limited access to knowledge. When I first got to know about open source, it fascinated me and I was excited to dive deep. I always want to contribute in projects that is used by many people so I can see my changes impacting many lives. It not only feels good but also made my technical skills more stronger, and On top of it it adds a tag of <font color="black">CONTRIBUTOR </font> on my github profile ;) that looks pretty <font color="black">COOL!! </font> 
+    </p>
+    <h3 >What are the challenges faced? </h3>
+    <p class="textDec">
+      I started skimming over various projects in search of a place to start, but soon I realised I was getting nowhere.<br><br> Without any guidance, it is very difficult to know where to start. After days of searching and reading articles, I decided to ask help from the open source community itself. <br><br>As a newcomer it was difficult to find a person to whom I could contact, wondering how to message or question him/her, whether they would find my question reasonable, grammatical correctness of language, waiting for response all such thoughts flooded my mind.<br><br>  After few failures, I was able to connect with a person who could explain me how to contribute in software. Even after I got a rough idea on the way of contributing, another challenge was waiting for me. I was unable to decide the projects that I can contribute to. I wished there was someone who could understand my skill-set and guide me to shortlist a project suitable for me.<br><br> Without any help, I struggled a lot with projects which were either too difficult for me to understand or some were not related to my skill-set at all.<br><br> Finally, I decided to start with <font color="black">KUBERNETES</font> repository.<br><br>After deciding the project the next challenge was to understand the code issues and project architecture. So Now I would like to add detailed steps of how one should proceed.<br>
+
+    </p>
+    <h3>Steps to be taken...</h3>
+    <p>
+      <p class="thick">1. Decide your language in which you want to contribute.</p>
+      <center>
+       <p class="textDec">
+        For me it was golang. Even if your just a beginner choose any language that is used extensively nowadays.
+      </p>
+      </center>
+    </p>
+    <p>  
+      <p class="thick">2.Google about the most used projects written in that languages and choose one of them</p>
+       <center>
+      <p class="textDec">
+        I got a list of multiple projects and among them I choosed Kubernetes.
+      </p>
+    </center>
+    </p>
+    <p>  
+      <p class="thick">3. Setup project in your local</p>
+       <center>
+      <p class="textDec">
+        First search for <a href="https://github.com/kubernetes/kubernetes"><font color="blue">kubernetes github</a></font> it will open a kuberentes github code.<br><br>
+        On that page you fill find out the steps to be followed. Then look for <a href="https://github.com/kubernetes/community/tree/master/contributors/devel#readme"><font color="blue">developer's documentation</a></font> Where you will get the whole guide list.<br><br>
+        Along with this join the <a href="https://slack.k8s.io/"><font color="blue">slack channel</a></font></font> for kubernetes community where you can discuss your issues with other people.<br><br>
+        Read the developer documentation and follow the steps on <a href="https://github.com/kubernetes/community/blob/master/contributors/guide/github-workflow.md"><font color="blue">How to setup in your local?</a></font> documentation. 
+         <p class="textDec">
+        <center><font color="red">CONGRATULATIONS !! You have setup your project in your project. </font></center></p>
+      <p class="textDec">
+        Next we will see how to find the right issue to start with.
+      </p>
+    </center>
+    </p>
+    <p>  
+      <p class="thick">4.Find the right issue to start with</p>
+       <center>
+      <p class="textDec">
+        <center><font color="red">DON'T WORRY IF YOU HAVE NO PRIOR KNOWLEDGE IN KUBERNETES.<br> JUST GO AHEAD WITH BELOW STEPS !!!<br><br></font></center></p>
+      <p class="textDec">
+        In the <a href="https://slack.k8s.io/"><font color="blue">slack channel</a></font> join <font color="black">#kubernetes-dev</font> and first give a brief introduction about yourself and ask on which issue you should start contributing. <br><br>
+        Everyone suggested me to start with fixing <a href=""><font color="blue">Static check failures</a></font> issue that can be solved without any prior knowledge of kuberentes.(If you want to learn about kuberentes then follow <a href="https://kubernetes.io/"><font color="blue">this</a></font>)  <br><br>
+        Then open the issues and read all comments carefully on the PR, with this you get a jist of what's happening. Look at other people's PR and see what did they did. (For reference you can check <a href="https://github.com/kubernetes/kubernetes/pull/82145"><font color="blue">my PR</a></font> to fix some static check failures).<br><br>
+        After this pick some packages from static file and start doing the changes in local.<br><br>
+        Before commiting your changes <font color="black">DON'T</font> forget to run test file on the package that you would change. This will give you more confidence on your changes. <br><br>
+        After doing all changes go ahead with the commit and push your changes. And if it requires any further change then all those steps will me mentioned in your PR by mentors.
+      </p>
+    </center>
+    </p>
+
+    <p class="textDec">
+        <center><font color="red">JUST GO AHEAD ... and RAISE your FIRST PR :) ;)</font></center></p>
+      <p class="textDec">
+
+  </center>
+  
+      
 </div>
 
-<div id="footer1">
-	<div class="row">
-		<div class="12u">
-
-			<!-- Contact -->
-				<section class="contact">
-					<header>
-						<h3>Get in touch with me</h3>
-					</header>
-
-					<ul class="icons">
-						<li><a href="https://github.com/setCodesToFire" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:shivani.singhal2804@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="https://www.linkedin.com/in/shivani2804/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-					</ul>
-				</section>
-
-		</div>
-
-	</div>
-</div>
 </div>
 
 <script>
