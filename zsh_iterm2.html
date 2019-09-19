@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>
   <link rel="stylesheet" href="assets/css/main.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -15,6 +16,7 @@
   <script src="assets/js/jquery.dropotron.min.js"></script>
   <script src="assets/js/jquery.scrolly.min.js"></script>
   <script src="assets/js/jquery.onvisible.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
   <script src="assets/js/skel.min.js"></script>
   <script src="assets/js/util.js"></script>
   <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
@@ -26,7 +28,7 @@
   }
   h3, h4 {
     margin: 10px 0 30px 0;
-    letter-spacing: 10px;      
+    letter-spacing: 5px;      
     font-size: 30px;
     color: #111;
   }
@@ -35,6 +37,16 @@
     letter-spacing: 5px;      
     font-size: 20px;
     color: #555;
+  }
+  .textDec{
+    font: 400 18px/1.8 Lato, sans-serif;
+    color: #788;
+  }
+
+  .thick{
+    font-weight: bold;
+    font: 400 22px/1.8 Lato, sans-serif;
+    color: black;
   }
   .margin11 {margin-bottom: 45px;}
   .bg-11 { 
@@ -164,7 +176,7 @@
   }
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="myPage1" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -174,91 +186,59 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">SS</a>
+      <a class="navbar-brand" href="#myPage1">SS</a></font>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://shivi28.github.io/">HOME</a></li>
-        <li><a href="#aboutme">ABOUT ME</a></li>
-        <li><a href="#blogs">BLOGS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="https://shivi28.github.io/">HOME</a></font></li>
+        <li><a href="https://shivi28.github.io/#aboutme">ABOUT ME</a></font></li>
+        <li><a href="https://shivi28.github.io/#blogs">BLOGS</a></font></li>
+        <li><a href="https://shivi28.github.io/#contact">CONTACT</a></font></li>
       </ul>
     </div>
   </div>
 </nav>
-<div id="#home" class="bg-1">
-    <div class="container-fluid11 bg-11 text-center">
-      <h3 class="margin11">SHIVANI SINGHAL</h3>
-      <img src="images/Shivani_Singhal.jpg" class="img-responsive img-circle margin11" style="display:inline" alt="Bird" width="350" height="50">
-    </div>
-</div>
-
-<!-- My front section-->
-<div id="aboutme" class="bg-1">
-  <div class="container">
-    <h3 class="text-center">ABOUT ME</h3>
-    <p class="text-center" font-size="30px" color="yellow">Hello Everyone! I am Shivani Singhal, a computer science engineer interested in doing competitve coding and open source. <br> I am proficient in golang and recently started contributing in kubernetes and golang. <br><br>  Earlier I was working in an e-commerce company of Jakarta, Indonesia as a golang developer and designed an application end-to-end that is used as one of my hero project during sales/campaigns. </p>
-  </div>
-</div>
-
 <!-- Container (The Band Section) -->
-<div id="blogs" class="container text-center">
-  <h3>My Blogs</h3>
+<div id="blogs1" class="container text-center">
+  <h3>How to Customize iterm2 with ZSH<img src="images/zsh_terminal.png" alt="" height="300" width="600" class="image.centered "/></h3>
+
+  <center>
+    
+    <p class="textDec">
+      This blog tells you how you can make your terminal looks better with Z shell(ZSH) which is a Unix shell that can be used as an interactive login shell and as a command interpreter for shell scripting. Zsh is an extended Bourne shell with many improvements, including some features of Bash, ksh, and tcsh.
+    </p>
+    <h3>Prequisites</h3>
+     <p class="textDec">
+        1. Homebrew <br>
+        2. <a href="https://www.iterm2.com/"><font color="blue">iterm2</font></a>
+    </p>
+    <h3>Steps to customize iterm2 with ZSH </h3>
+    <p class="textDec">
+     1. First install homebrew using <br>
+    <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code><br>
+        <br>
+     2. Install ZSH using below commands<br>
+     <code>sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</code><br>
+     <br>
+     3.Edit ~/.zshrc by typing <code>vim ~/.zshrc</code> and set <code>ZSH_THEME="agnoster"</code> <br>
+    <br>
+     4. Restart your iterm2 terminal. But you will see [?][?] such annoying question marks in your terminal.<br><br>
+
+     5. So to avoid them you need to install the source code pro fonts. To download click on this
+     <a href="https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf">link</a>
+     and press download button.<br><br>
+
+     6. After that I pop up will come and click on install fonts that will add those fonts in your mac.
+    <br><br>
+
+     7. After this go to <code>iterm2-->preferences-->profiles-->text-->font</code>.<br>
+     <br>8. Select source code pro font and restart the terminal.
+    </p>
+  </center>
+  
+      
 </div>
 
-<section class="carousel">
-    <div class="reel">
-    	<article>
-            <a class="image featured center" href="kubernetes.html">
-                <center><img src="images/kubernetes.png" alt="" height="300" width="600" class="image.centered "/>
-                </center>
-                <header>
-                    <p class=hc>How to Contribute in kubernetes</p>
-                </header>
-                <p>My first PR to fix an issue in open source code of Kuberentes</p>
-         </a>
-        </article>
-        <article>
-            <a class="image featured center" href="zsh_iterm2.html">
-                <center><img src="images/zsh_terminal.png" alt="" height="350" width="600" class="image.centered "/>
-                </center>
-                <header>
-                    <p class=hc>How to customize iterm2 with ZSH</p>
-                </header>
-         </a>
-        </article>
-    </div>
-</section>
-
-<!-- Container (TOUR Section) -->
-<div id="contact" class="bg-1">
- 
-
-
-<div id="footer">
-	<div class="row">
-		<div class="12u">
-
-			<!-- Contact -->
-				<section class="contact">
-					<header>
-						<h3>Get in touch with me</h3>
-					</header>
-
-					<ul class="icons">
-            <li><a href="https://twitter.com/ShivaniS2804" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://github.com/shivi28" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:shivani.singhal2804@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="https://www.linkedin.com/in/shivani2804/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-            <li><a href="https://join.skype.com/invite/ifghAPJm2RZq" class="icon fa-skype"><span class="label">Skype</span></a></li>
-            <li><a href="https://stackoverflow.com/users/10450863/shivani-singhal" class="icon fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
-					</ul>
-				</section>
-
-		</div>
-
-	</div>
-</div>
 </div>
 
 <script>
