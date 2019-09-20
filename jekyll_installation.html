@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>
   <link rel="stylesheet" href="assets/css/main.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -15,36 +16,37 @@
   <script src="assets/js/jquery.dropotron.min.js"></script>
   <script src="assets/js/jquery.scrolly.min.js"></script>
   <script src="assets/js/jquery.onvisible.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
   <script src="assets/js/skel.min.js"></script>
   <script src="assets/js/util.js"></script>
   <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
   <script src="assets/js/main.js"></script>
   <script>
-      /* When the user clicks on the button,
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-      function filterFunction() {
-        var input, filter, ul, li, a, i;
-        input = document.getElementById("myInput");
-        console.log(input)
-        filter = input.value.toUpperCase();
-        div = document.getElementById("myDropdown");
-        a = div.getElementsByTagName("a");
-        console.log("a")
-        console.log(a)
-        for (i = 0; i < a.length; i++) {
-          txtValue = a[i].textContent || a[i].innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
-          } else {
-            a[i].style.display = "none";
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        function filterFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("myInput");
+          console.log(input)
+          filter = input.value.toUpperCase();
+          div = document.getElementById("myDropdown");
+          a = div.getElementsByTagName("a");
+          console.log("a")
+          console.log(a)
+          for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+            } else {
+              a[i].style.display = "none";
+            }
           }
         }
-      }
-      </script>
+    </script>
   <style>
   body {
     font: 400 15px/1.8 Lato, sans-serif;
@@ -52,7 +54,7 @@
   }
   h3, h4 {
     margin: 10px 0 30px 0;
-    letter-spacing: 10px;      
+    letter-spacing: 5px;      
     font-size: 30px;
     color: #111;
   }
@@ -61,6 +63,16 @@
     letter-spacing: 5px;      
     font-size: 20px;
     color: #555;
+  }
+  .textDec{
+    font: 400 18px/1.8 Arial, Helvetica, sans-serif;
+    color: black;
+  }
+
+  .thick{
+    font-weight: bold;
+    font: 400 22px/1.8 Lato, sans-serif;
+    color: black;
   }
   .margin11 {margin-bottom: 45px;}
   .bg-11 { 
@@ -242,7 +254,7 @@
 
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="myPage1" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -252,108 +264,77 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">SS</a>
+      <a class="navbar-brand" href="#myPage1">SS</a></font>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://shivi28.github.io/">HOME</a></li>
+        <li><a href="https://shivi28.github.io/">HOME</a></font></li>
         <li><div class="collapse navbar-collapse">
-            <button onclick="myFunction()" class="navbar">BLOGS</button>
-            <div id="myDropdown" class="dropdown-content">
-              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-              <a href="kubernetes.html"><font color="black">How to Contribute in kubernetes</font></a>
-              <a href="zsh_iterm2.html"><font color="black">How to customize iterm2 with ZSH</font></a>
-              <a href="jekyll_installation.html"><font color="black">How to install jekyll on Mac</font></a>
-            </div>
-          </div>
-        </li>
-        <li><a href="#aboutme">ABOUT ME</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+                <button onclick="myFunction()" class="navbar">BLOGS</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                  <a href="kubernetes.html"><font color="black">How to Contribute in kubernetes</font></a>
+                  <a href="zsh_iterm2.html"><font color="black">How to customize iterm2 with ZSH</font></a>
+                  <a href="jekyll_installation.html"><font color="black">How to install jekyll on Mac</font></a>
+                </div>
+              </div>
+            </li>
+        <li><a href="https://shivi28.github.io/#aboutme">ABOUT ME</a></font></li>
+        <li><a href="https://shivi28.github.io/#contact">CONTACT</a></font></li>
       </ul>
     </div>
   </div>
 </nav>
-<div id="#home" class="bg-1">
-    <div class="container-fluid11 bg-11 text-center">
-      <h3 class="margin11">SHIVANI SINGHAL</h3>
-      <img src="images/Shivani_Singhal.jpg" class="img-responsive img-circle margin11" style="display:inline" alt="Bird" width="350" height="50">
-    </div>
-</div>
-
-<!-- My front section-->
-<div id="aboutme" class="bg-1">
-  <div class="container">
-    <h3 class="text-center">ABOUT ME</h3>
-    <p class="text-center" font-size="30px" color="yellow">Hello Everyone! I am Shivani Singhal, a computer science engineer interested in doing competitve coding and open source. <br> I am proficient in golang and recently started contributing in kubernetes and golang. <br><br>  Earlier I was working in an e-commerce company of Jakarta, Indonesia as a golang developer and designed an application end-to-end that is used as one of my hero project during sales/campaigns. </p>
-  </div>
-</div>
-
 <!-- Container (The Band Section) -->
-<div id="blogs" class="container text-center">
-  <h3>My Blogs</h3>
-</div>
+<div id="blogs1" class="container text-center">
+  <h3>How to install jekyll in Mac<img src="images/jekyll.png" alt="" height="300" width="600" class="image.centered "/></h3>
+  <center>
+        <p class="textDec">
+            This blog tells you how to install jekyll on mac. <font color="black"> JEKYLL</font> is a simple, blog-aware, static site generator for personal, project, or organization sites, written in Ruby.
+        </p>
+        <h3>Steps to install</h3>
+            <p class="textDec">
+                    <font color="black">1. First install Homebrew</font> using following command :- 
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp<code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>
+                    <br><br>
+                    <font color="black">2. </font>Then check which ruby version is installed in the system using <font color="black"><code> ruby -v</code></font>. If available version is <font color="black"> >= 2.3.0</font> then you can &nbsp&nbsp&nbsp&nbsp&nbspignore this step, else open the terminal and run 
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp<code>curl -sSL https://raw.githubusercontent.com/rvm/rvm/master/binscripts/rvm-installer | bash -s stable</code>
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbspWhen this is complete, you need to restart your terminal for the rvm command to work.
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbspNow, run <code>rvm list known</code>
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbspThis shows the list of versions of the ruby.
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbspNow, run <code>rvm install ruby-2.4.2</code>
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbspif you type <code>ruby -v</code> in the terminal, you should see <font color="black">ruby 2.4.2.</font>
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbspIf it still shows you <font color="black">ruby 2.0.</font>, run <code>rvm use ruby-2.4.2 --default.</code>
+                    <br><br>
 
-<section class="carousel">
-    <div class="reel">
-        <article>
-            <a class="image featured center" href="kubernetes.html">
-                <center><img src="images/kubernetes.png" alt="" height="350" width="600" class="image.centered "/>
-                </center>
-                <header>
-                    <p class=hc>How to Contribute in kubernetes</p>
-                </header>
-         </a>
-        </article>
-        <article>
-            <a class="image featured center" href="zsh_iterm2.html">
-                <center><img src="images/zsh_terminal.png" alt="" height="350" width="600" class="image.centered "/>
-                </center>
-                <header>
-                    <p class=hc>How to customize iterm2 with ZSH</p>
-                </header>
-         </a>
-        </article>
-        <article>
-            <a class="image featured center" href="jekyll_installation.html">
-                <center><img src="images/jekyll.png" alt="" height="350" width="600" class="image.centered "/>
-                </center>
-                <header>
-                    <p class=hc>How to install JEKYLL on mac</p>
-                </header>
-         </a>
-        </article>
+                    Now you are done with ruby installation. Lets move to installing jekyll
+                    <br><br>
+
+                    <font color="black">3. </font> To install JEKYLL run
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp<code>gem install jekyll</code>
+                    <br>
+                    &nbsp&nbsp&nbsp&nbspThis might give you some permission denied error, like permission denied for  
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp<code>/Library/Ruby/Gems/2.0.0/public_suffix-4.0.1.gem</code>
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbspThen run <code>sudo chown -R $(whoami) /Library/Ruby/Gems/*</code> 
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbspand again run <code>gem install jekyll</code> and run <code>gem install bundler</code> to install bundler
+                    <br>
+    
+            </p>
+            <h3>Congratulations !! You're done</h3>
+      </center> 
     </div>
-</section>
-
-<!-- Container (TOUR Section) -->
-<div id="contact" class="bg-1">
- 
-
-
-<div id="footer">
-	<div class="row">
-		<div class="12u">
-
-			<!-- Contact -->
-				<section class="contact">
-					<header>
-						<h3>Get in touch with me</h3>
-					</header>
-
-					<ul class="icons">
-            <li><a href="https://twitter.com/ShivaniS2804" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://github.com/shivi28" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:shivani.singhal2804@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="https://www.linkedin.com/in/shivani2804/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-            <li><a href="https://join.skype.com/invite/ifghAPJm2RZq" class="icon fa-skype"><span class="label">Skype</span></a></li>
-            <li><a href="https://stackoverflow.com/users/10450863/shivani-singhal" class="icon fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
-					</ul>
-				</section>
-
-		</div>
-
-	</div>
-</div>
 </div>
 
 <script>
